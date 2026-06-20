@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КартаБонус — лучшие кредитные и дебетовые карты 2026, онлайн-заявка</title>
+  <meta name="description" content="Каталог выгодных дебетовых и кредитных карт от ведущих банков. Кэшбэк до 30%, до 365 дней без процентов, бесплатное обслуживание. Оформите карту онлайн за 5 минут." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Карта<span>Бонус</span></a>
+      <nav class="nav">
+        <a href="#cards">Каталог карт</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#how">Как оформить</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему" title="Сменить тему">
+        <span class="ic-moon">🌙</span><span class="ic-sun">☀️</span>
+      </button>
+      <a href="#cards" class="btn btn-primary btn-sm">Подобрать карту</a>
+      <button class="burger" aria-label="Меню" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">✦ Более 30 банков-партнёров</div>
+        <h1>Карта, которая <span class="grad">платит вам</span>, а не вы ей</h1>
+        <p class="hero-sub">
+          Собрали самые выгодные дебетовые и кредитные карты 2026 года в одном месте.
+          Кэшбэк до&nbsp;30%, до&nbsp;365 дней без процентов и бесплатное обслуживание.
+          Заявка онлайн&nbsp;— решение за 1–2 минуты.
+        </p>
+        <div class="hero-cta">
+          <a href="#cards" class="btn btn-primary btn-lg">Выбрать карту →</a>
+          <a href="#how" class="btn btn-ghost btn-lg">Как это работает</a>
+        </div>
+        <div class="hero-trust">
+          <div><b>0 ₽</b><span>за оформление</span></div>
+          <div><b>5 мин</b><span>на заявку</span></div>
+          <div><b>100%</b><span>онлайн</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="float-card fc-1"></div>
+        <div class="float-card fc-2"></div>
+        <div class="float-card fc-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGOS / TRUST BAR ===== -->
+  <div class="trustbar">
+    <div class="container trustbar-inner">
+      <span>Карты от проверенных банков:</span>
+      <div class="trust-logos" id="trustLogos"></div>
+    </div>
+  </div>
+
+  <!-- ===== CARD OF THE DAY ===== -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <div class="featured-box" id="featuredCard"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATALOG ===== -->
+  <section class="catalog" id="cards">
+    <div class="container">
+      <div class="section-head">
+        <h2>Каталог карт</h2>
+        <p>Выберите тип карты и оформите заявку онлайн. Это бесплатно и ни к чему не обязывает.</p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">Все карты</button>
+          <button class="filter" data-filter="debit">Дебетовые</button>
+          <button class="filter" data-filter="credit">Кредитные</button>
+        </div>
+        <div class="search">
+          <input type="search" id="search" placeholder="Поиск по банку или названию…" />
+        </div>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid"></div>
+      <p class="no-results" id="noResults" hidden>По вашему запросу ничего не найдено.</p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-head">
+        <h2>Почему оформлять у нас выгодно</h2>
+        <p>Мы сравниваем условия за вас и показываем только действительно стоящие предложения.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit"><div class="benefit-ico">💸</div><h3>Высокий кэшбэк</h3><p>Возвращайте до 30% с покупок в любимых категориях — кафе, АЗС, маркетплейсы, путешествия.</p></div>
+        <div class="benefit"><div class="benefit-ico">🆓</div><h3>Бесплатное обслуживание</h3><p>Большинство карт в каталоге — без платы за обслуживание при простых условиях.</p></div>
+        <div class="benefit"><div class="benefit-ico">⏱️</div><h3>Заявка за 5 минут</h3><p>Анкета онлайн, без визита в офис. Решение банк присылает почти мгновенно.</p></div>
+        <div class="benefit"><div class="benefit-ico">🛡️</div><h3>Только надёжные банки</h3><p>В подборке — карты лицензированных банков с защитой средств и поддержкой 24/7.</p></div>
+        <div class="benefit"><div class="benefit-ico">📅</div><h3>До 365 дней без %</h3><p>Кредитки с длинным льготным периодом: пользуйтесь деньгами банка бесплатно.</p></div>
+        <div class="benefit"><div class="benefit-ico">🚚</div><h3>Бесплатная доставка</h3><p>Курьер привезёт карту домой или в офис в удобное время — часто в день заявки.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <h2>Как оформить карту</h2>
+        <p>Три простых шага — и карта у вас.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Выберите карту</h3><p>Сравните условия в каталоге и нажмите «Оформить» у понравившейся карты.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Заполните анкету</h3><p>Короткая онлайн-форма на сайте банка: паспорт и пара контактных данных.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Получите карту</h3><p>Дождитесь решения и заберите карту с бесплатной доставкой или в отделении.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <h2>Не знаете, какую карту выбрать?</h2>
+      <p>Начните с дебетовой карты с высоким кэшбэком — это бесплатно и выгодно с первой покупки.</p>
+      <a href="#cards" class="btn btn-light btn-lg">Смотреть каталог карт →</a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>Частые вопросы</h2>
+        <p>Коротко о главном перед оформлением.</p>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item"><button class="faq-q">Оформление карты действительно бесплатное?<span>+</span></button><div class="faq-a"><p>Да. Подача заявки через наш каталог бесплатна и ни к чему вас не обязывает. Условия обслуживания самой карты указаны в её описании.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Сколько ждать решение банка?<span>+</span></button><div class="faq-a"><p>По большинству карт предварительное решение приходит в течение 1–2 минут после заполнения анкеты на сайте банка.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Можно оформить несколько карт сразу?<span>+</span></button><div class="faq-a"><p>Да, ограничений нет. Многие совмещают дебетовую карту с кэшбэком и кредитную с льготным периодом.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Это безопасно?<span>+</span></button><div class="faq-a"><p>Все заявки оформляются на официальных сайтах банков по защищённому соединению. Мы не собираем и не храним ваши паспортные данные.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Какие нужны документы?<span>+</span></button><div class="faq-a"><p>Обычно достаточно паспорта РФ. Для некоторых кредитных карт банк может запросить подтверждение дохода.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="#top" class="logo">Карта<span>Бонус</span></a>
+        <p>Независимый сервис подбора банковских карт. Помогаем выбрать выгодные условия и оформить заявку онлайн.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <a href="#cards">Каталог карт</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#how">Как оформить</a>
+        <a href="#faq">Вопросы</a>
+      </div>
+      <div class="footer-col">
+        <h4>Карты</h4>
+        <a href="#cards" data-jump="debit">Дебетовые карты</a>
+        <a href="#cards" data-jump="credit">Кредитные карты</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">
+        Информация на сайте носит справочный характер и не является публичной офертой.
+        Условия по картам уточняйте на сайтах банков. Реклама. Не является индивидуальной
+        инвестиционной рекомендацией. 18+
+      </p>
+      <p class="copy">© 2026 КартаБонус. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
