@@ -16,7 +16,15 @@
       "mcp__Claude_in_Chrome__find",
       "mcp__Claude_in_Chrome__read_page",
       "mcp__Claude_in_Chrome__browser_batch",
-      "PowerShell($src = \"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\Сайт пампаду\"; $zip = \"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\сайт-пампаду.zip\"; if \\(Test-Path $zip\\) { Remove-Item $zip -Force }; Compress-Archive -Path \\(Join-Path $src 'index.html'\\),\\(Join-Path $src 'style.css'\\),\\(Join-Path $src 'script.js'\\) -DestinationPath $zip; if \\(Test-Path $zip\\) { \"OK: \" + \\(Get-Item $zip\\).Length + \" bytes\" })"
+      "PowerShell($src = \"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\Сайт пампаду\"; $zip = \"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\сайт-пампаду.zip\"; if \\(Test-Path $zip\\) { Remove-Item $zip -Force }; Compress-Archive -Path \\(Join-Path $src 'index.html'\\),\\(Join-Path $src 'style.css'\\),\\(Join-Path $src 'script.js'\\) -DestinationPath $zip; if \\(Test-Path $zip\\) { \"OK: \" + \\(Get-Item $zip\\).Length + \" bytes\" })",
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "Bash(curl -s \"https://tranquil-palmier-6333d7.netlify.app/script.js\")",
+      "PowerShell(\\(Invoke-WebRequest -Uri \"https://tranquil-palmier-6333d7.netlify.app/script.js\"\\).Content | Select-String 'link:' | Select-Object -First 20)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://tranquil-palmier-6333d7.netlify.app/script.js\" -UseBasicParsing; $r.Content | Select-String 'link:' } catch { $_.Exception.Message })",
+      "Bash(curl -s \"https://tranquil-palmier-6333d7.netlify.app/script.js\" -o /tmp/livescript.js)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://tranquil-palmier-6333d7.netlify.app/script.js\" -o /dev/null -w \"%{http_code} size=%{size_download}\\\\n\")",
+      "PowerShell(curl.exe -sI -L \"https://trk.ppdu.ru/click/gbMIK1C8?erid=2SDnjcoWEz6\")"
     ]
   }
 }

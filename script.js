@@ -74,7 +74,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽*" }
     ],
     tags: ["Мили на билеты", "Для путешествий"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/gbMIK1C8?erid=2SDnjcoWEz6"
   },
   {
     bank: "Т-Банк",
@@ -89,7 +89,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["Для молодёжи", "Высокий кэшбэк"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/OWnGrhrD?erid=2SDnjeivmyt"
   },
   {
     bank: "Т-Банк",
@@ -104,24 +104,8 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽*" }
     ],
     tags: ["100% за топливо", "Карта МИР"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/jjBBBPPC?erid=2SDnjemFSoC"
   },
-  {
-    bank: "ОТП Банк",
-    name: "«ОТП Карта»",
-    type: "debit",
-    rating: 4.5,
-    offerId: "49bcd3ed-6ce4-4b07-a0b7-83ecc3602e6a",
-    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
-    specs: [
-      { k: "Кэшбэк", v: "до 7%" },
-      { k: "На остаток", v: "до 14%" },
-      { k: "Обслуживание", v: "0 ₽" }
-    ],
-    tags: ["% на остаток", "Бесплатная"],
-    link: "#СКОРО_после_модерации"
-  },
-
   /* ---------- КРЕДИТНЫЕ ---------- */
   {
     bank: "ВТБ",
@@ -136,7 +120,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["До 200 дней без %", "Большой лимит"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/i6UKWbNq?erid=2SDnjeGCc2T"
   },
   {
     bank: "Ренессанс Банк",
@@ -151,7 +135,21 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["115 дней без %", "Высокий лимит"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/VNoCPAwa?erid=2SDnjdFo9iJ"
+  },
+  {
+    bank: "ОТП Банк",
+    name: "КК 120 дней без %",
+    type: "credit",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
+    specs: [
+      { k: "Без процентов", v: "до 120 дней" },
+      { k: "Кредитный лимит", v: "до 500 000 ₽" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["120 дней без %", "Бесплатное обслуживание"],
+    link: "https://trk.ppdu.ru/click/DF37bDI8?erid=2SDnjf24dte"
   },
   {
     bank: "Альфа-Банк",
@@ -181,7 +179,93 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["Оплата частями", "Сплит без процентов"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/z9uGkkvi?erid=2SDnjdJuo9L"
+  },
+  {
+    bank: "Т-Банк",
+    name: "Кредитная карта",
+    type: "credit",
+    rating: 4.7,
+    gradient: "linear-gradient(135deg,#1c1c1e,#3a3a3c)",
+    specs: [
+      { k: "Без процентов", v: "до 55 дней" },
+      { k: "Кредитный лимит", v: "до 1 000 000 ₽" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Без скрытых платежей", "Высокий лимит"],
+    link: "https://trk.ppdu.ru/click/j1ISERcg?erid=2SDnjeUybaz"
+  },
+
+  /* ---------- РКО / БИЗНЕС ---------- */
+  {
+    bank: "ВТБ",
+    name: "Регистрация бизнеса + РКО",
+    type: "business",
+    rating: 4.7,
+    gradient: "linear-gradient(135deg,#0a2896,#1e50d6)",
+    specs: [
+      { k: "Регистрация бизнеса", v: "бесплатно" },
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["Регистрация бизнеса", "РКО"],
+    link: "https://trk.ppdu.ru/click/cNVX7lv7?erid=Kra23bNL5"
+  },
+  {
+    bank: "ОТП Банк",
+    name: "РКО",
+    type: "business",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/RpTTCCcv?erid=2SDnjerCCxU"
+  },
+  {
+    bank: "Банк ПСБ",
+    name: "РКО",
+    type: "business",
+    rating: 4.6,
+    gradient: "linear-gradient(135deg,#0a4ea8,#1666c8)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/hGElrPIc?erid=Kra23mn2h"
+  },
+  {
+    bank: "Точка Банк",
+    name: "РКО",
+    type: "business",
+    rating: 4.8,
+    gradient: "linear-gradient(135deg,#ffd400,#f7b500)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/1pMUYSxL?erid=2SDnjduYB12"
+  },
+  {
+    bank: "БСПБ",
+    name: "РКО",
+    type: "business",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#003876,#0058b0)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/ltN2QAqq?erid=2SDnjeLA2cx"
   }
 ];
 
@@ -197,7 +281,7 @@ function stars(rating) {
 }
 
 function cardHTML(c) {
-  const typeLabel = c.type === "credit" ? "Кредитная" : "Дебетовая";
+  const typeLabel = c.type === "credit" ? "Кредитная" : c.type === "business" ? "РКО" : "Дебетовая";
   const specs = c.specs
     .map((s) => `<div class="ccard-spec"><span>${s.k}</span><b>${s.v}</b></div>`)
     .join("");
