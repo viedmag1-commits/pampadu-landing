@@ -24,7 +24,10 @@
       "Bash(curl -s \"https://tranquil-palmier-6333d7.netlify.app/script.js\" -o /tmp/livescript.js)",
       "Read(//tmp/**)",
       "Bash(curl -s \"https://tranquil-palmier-6333d7.netlify.app/script.js\" -o /dev/null -w \"%{http_code} size=%{size_download}\\\\n\")",
-      "PowerShell(curl.exe -sI -L \"https://trk.ppdu.ru/click/gbMIK1C8?erid=2SDnjcoWEz6\")"
+      "PowerShell(curl.exe -sI -L \"https://trk.ppdu.ru/click/gbMIK1C8?erid=2SDnjcoWEz6\")",
+      "Bash(gh auth *)",
+      "Bash(gh --version)",
+      "PowerShell(gh --version)"
     ]
   }
 }
