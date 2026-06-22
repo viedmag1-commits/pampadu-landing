@@ -195,6 +195,20 @@ const CARDS = [
     tags: ["Без скрытых платежей", "Высокий лимит"],
     link: "https://trk.ppdu.ru/click/j1ISERcg?erid=2SDnjeUybaz"
   },
+  {
+    bank: "Ozon Банк",
+    name: "Кредитная карта",
+    type: "credit",
+    rating: 4.6,
+    gradient: "linear-gradient(135deg,#005bff,#00277a)",
+    specs: [
+      { k: "Без процентов", v: "до 60 дней" },
+      { k: "Кэшбэк на Ozon", v: "до 10%" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Кэшбэк на Ozon", "Без скрытых платежей"],
+    link: "https://trk.ppdu.ru/click/sdKfuq9q?erid=2SDnjcGXYYi"
+  },
 
   /* ---------- РКО / БИЗНЕС ---------- */
   {
