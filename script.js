@@ -59,7 +59,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["Подарок Пятёрочка", "Бесплатная"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/8qXkyaAR?erid=2SDnjeh5bv2&siteId=23656"
   },
   {
     bank: "Т-Банк",
