@@ -280,6 +280,22 @@ const CARDS = [
     ],
     tags: ["РКО", "Для бизнеса"],
     link: "https://trk.ppdu.ru/click/ltN2QAqq?erid=2SDnjeLA2cx"
+  },
+
+  /* ---------- ВАКАНСИИ ---------- */
+  {
+    bank: "Альфа-Банк",
+    name: "Мобильный банкир",
+    type: "work",
+    rating: 4.7,
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Доход", v: "сдельная оплата" },
+      { k: "График", v: "свободный" },
+      { k: "Оформление", v: "удалённо, без опыта" }
+    ],
+    tags: ["Без опыта", "Подработка", "Малые города"],
+    link: "https://trk.ppdu.ru/click/MtRx2Hjm?erid=2SDnjcN7Hxq"
   }
 ];
 
@@ -295,7 +311,8 @@ function stars(rating) {
 }
 
 function cardHTML(c) {
-  const typeLabel = c.type === "credit" ? "Кредитная" : c.type === "business" ? "РКО" : "Дебетовая";
+  const typeLabel = c.type === "credit" ? "Кредитная" : c.type === "business" ? "РКО" : c.type === "work" ? "Вакансия" : "Дебетовая";
+  const ctaText = c.type === "work" ? "Откликнуться →" : "Оформить карту →";
   const specs = c.specs
     .map((s) => `<div class="ccard-spec"><span>${s.k}</span><b>${s.v}</b></div>`)
     .join("");
@@ -313,7 +330,7 @@ function cardHTML(c) {
         <div class="ccard-specs">${specs}</div>
         <div class="ccard-tags">${tags}</div>
         <div class="ccard-cta">
-          <a class="btn btn-primary btn-block" href="${c.link}" target="_blank" rel="noopener nofollow">Оформить карту →</a>
+          <a class="btn btn-primary btn-block" href="${c.link}" target="_blank" rel="noopener nofollow">${ctaText}</a>
           <p class="ccard-note">Заявка онлайн • Бесплатно</p>
         </div>
       </div>
