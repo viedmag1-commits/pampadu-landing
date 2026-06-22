@@ -29,7 +29,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽ навсегда" }
     ],
     tags: ["Бесплатно навсегда", "Кэшбэк на всё", "Карта МИР"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/Ik2W7bFJ?erid=2SDnjehD1C8&siteId=23657"
   },
   {
     bank: "ВТБ",
@@ -44,7 +44,7 @@ const CARDS = [
       { k: "Обслуживание", v: "0 ₽" }
     ],
     tags: ["Бесплатная", "Кэшбэк рублями", "Карта МИР"],
-    link: "#СКОРО_после_модерации"
+    link: "https://trk.ppdu.ru/click/dqMrRH4p?erid=2SDnjbxUxwk&siteId=23657"
   },
   {
     bank: "Банк ПСБ",
