@@ -92,6 +92,66 @@ const CARDS = [
     link: "https://trk.ppdu.ru/click/OWnGrhrD?erid=2SDnjeivmyt"
   },
   {
+    bank: "Альфа-Банк",
+    name: "Альфа-Карта для молодёжи",
+    type: "debit",
+    rating: 4.7,
+    offerId: "e276690e-11f1-4b52-9f88-0919899de7ad",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Кэшбэк", v: "до 20%" },
+      { k: "Для возраста", v: "14–25 лет" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Для молодёжи", "Бесплатная"],
+    link: "https://trk.ppdu.ru/click/wRbeMS68?erid=2SDnjcyvkUv"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Альфа-Карта «Пенсия»",
+    type: "debit",
+    rating: 4.7,
+    offerId: "6338c90f-82b4-40ed-ae24-f1ab1c4c9eed",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Кэшбэк", v: "до 10%" },
+      { k: "Для пенсионеров", v: "повышенный % на остаток" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Для пенсионеров", "Бесплатная"],
+    link: "https://trk.ppdu.ru/click/D0ea0fZJ?erid=2SDnjefNrLJ"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Альфа-Карта для самозанятых",
+    type: "debit",
+    rating: 4.6,
+    offerId: "20825cac-a9f8-48c7-8f24-3924eec354b7",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Приём платежей", v: "без расчётного счёта" },
+      { k: "Кэшбэк", v: "до 10%" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Для самозанятых", "Бесплатная"],
+    link: "https://trk.ppdu.ru/click/VVeEb61B?erid=2SDnjcYZxoE"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Детская Альфа-Карта",
+    type: "debit",
+    rating: 4.6,
+    offerId: "ac7b4fb4-768e-471a-a4c1-08c98bd0b99f",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Для возраста", v: "6–13 лет" },
+      { k: "Родительский контроль", v: "в приложении" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Детская карта", "Бесплатная"],
+    link: "https://trk.ppdu.ru/click/RrraykdH?erid=2SDnjdQzYpk"
+  },
+  {
     bank: "Т-Банк",
     name: "Дебетовая Black МИР",
     type: "debit",
@@ -210,7 +270,54 @@ const CARDS = [
     link: "https://trk.ppdu.ru/click/sdKfuq9q?erid=2SDnjcGXYYi"
   },
 
+  /* ---------- КРЕДИТЫ / ИПОТЕКА ---------- */
+  {
+    bank: "Альфа-Банк",
+    name: "Кредит наличными на любые цели",
+    type: "loan",
+    rating: 4.7,
+    offerId: "69875f12-3062-4290-a5ad-ddf0ab879591",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Сумма", v: "до 30 000 000 ₽" },
+      { k: "Ставка", v: "от рекламной" },
+      { k: "Решение", v: "онлайн" }
+    ],
+    tags: ["Без залога", "Решение онлайн"],
+    link: "https://trk.ppdu.ru/click/JItOaw1l?erid=2SDnjeBUY44"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Ипотека",
+    type: "loan",
+    rating: 4.6,
+    offerId: "654c909c-6175-4d44-b456-a02a2abead89",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Ставка", v: "от рекламной" },
+      { k: "Первый взнос", v: "от 0%" },
+      { k: "Одобрение", v: "онлайн" }
+    ],
+    tags: ["Ипотека", "Одобрение онлайн"],
+    link: "https://trk.ppdu.ru/click/IJIWzRPC?erid=2SDnjefNWrN"
+  },
+
   /* ---------- РКО / БИЗНЕС ---------- */
+  {
+    bank: "Альфа-Банк",
+    name: "Регистрация бизнеса + РКО",
+    type: "business",
+    rating: 4.7,
+    offerId: "a2a06289-081c-402f-9cd7-dbd38ac11be7",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Регистрация бизнеса", v: "бесплатно" },
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["Регистрация бизнеса", "РКО"],
+    link: "https://trk.ppdu.ru/click/jXyEiaoK?erid=2SDnjeEA46e"
+  },
   {
     bank: "ВТБ",
     name: "Регистрация бизнеса + РКО",
@@ -311,8 +418,13 @@ function stars(rating) {
 }
 
 function cardHTML(c) {
-  const typeLabel = c.type === "credit" ? "Кредитная" : c.type === "business" ? "РКО" : c.type === "work" ? "Вакансия" : "Дебетовая";
-  const ctaText = c.type === "work" ? "Откликнуться →" : "Оформить карту →";
+  const typeLabel =
+    c.type === "credit" ? "Кредитная" :
+    c.type === "business" ? "РКО" :
+    c.type === "work" ? "Вакансия" :
+    c.type === "loan" ? "Кредит/Ипотека" :
+    "Дебетовая";
+  const ctaText = c.type === "work" ? "Откликнуться →" : c.type === "loan" ? "Оформить заявку →" : "Оформить карту →";
   const specs = c.specs
     .map((s) => `<div class="ccard-spec"><span>${s.k}</span><b>${s.v}</b></div>`)
     .join("");
