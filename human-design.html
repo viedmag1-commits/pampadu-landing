@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Дизайн Человека — индивидуальные сессии</title>
+<meta name="description" content="Индивидуальные сессии по Дизайну Человека: разбор карты, понимание своей природы, принятие решений, отношения и реализация." />
+<script>
+  // ===== Константы-ссылки и параметры (заглушки, заменить на реальные) =====
+  const LINK_HOME    = './index.html';
+  const LINK_BOOKING = 'https://t.me/username';
+  const PRICE_TEXT   = '____ ₽';
+</script>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:linear-gradient(180deg,#0c0a1c 0%, #150f2b 45%, #1c1338 100%);
+    color:#e9e4f5;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .container{max-width:480px;margin:0 auto;padding:0 20px 60px;}
+  .topnav{padding:16px 20px;}
+  .topnav a{color:#c9a45a;text-decoration:none;font-size:14px;}
+  .hero{text-align:center;padding:16px 0 40px;}
+  .eyebrow{color:#c9a45a;letter-spacing:.14em;font-size:12px;text-transform:uppercase;margin-bottom:14px;}
+  .hero h1{font-size:30px;margin:0 0 16px;font-weight:700;}
+  .hero p{color:#c7bfe0;font-size:16px;margin:0 0 28px;}
+  .btn-gold{
+    display:inline-block;
+    background:linear-gradient(135deg,#d9b76a,#b9924a);
+    color:#1a1330;
+    font-weight:700;
+    padding:16px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-size:16px;
+  }
+  section{margin:44px 0;}
+  h2{font-size:22px;margin:0 0 16px;color:#f1e9d0;font-weight:700;}
+  .lead p{color:#cfc7e6;font-size:15px;margin:0 0 14px;}
+  .grid{display:flex;flex-direction:column;gap:12px;}
+  .gcard{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(201,164,90,.25);
+    border-radius:16px;
+    padding:18px;
+  }
+  .gcard h3{margin:0 0 6px;font-size:16px;color:#e9d9a6;}
+  .gcard p{margin:0;font-size:14px;color:#c4bcd9;}
+  .steps{display:flex;flex-direction:column;gap:16px;}
+  .step{display:flex;gap:14px;align-items:flex-start;}
+  .step-num{
+    flex-shrink:0;width:32px;height:32px;border-radius:50%;
+    background:rgba(201,164,90,.15);border:1px solid #b9924a;
+    color:#e9d9a6;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;
+  }
+  .step h3{margin:0 0 4px;font-size:15px;color:#f1e9d0;}
+  .step p{margin:0;font-size:14px;color:#c4bcd9;}
+  .price-box{
+    text-align:center;
+    background:rgba(201,164,90,.08);
+    border:1px solid rgba(201,164,90,.3);
+    border-radius:18px;
+    padding:28px 20px;
+  }
+  .price-box .amount{font-size:34px;font-weight:700;color:#e9d9a6;margin-bottom:10px;}
+  .price-box p{color:#c4bcd9;font-size:14px;margin:0 0 20px;}
+  details{
+    border-bottom:1px solid rgba(201,164,90,.2);
+    padding:14px 0;
+  }
+  summary{cursor:pointer;font-size:15px;color:#e9e4f5;font-weight:600;list-style:none;}
+  summary::-webkit-details-marker{display:none;}
+  summary:before{content:"+ ";color:#c9a45a;}
+  details[open] summary:before{content:"— ";}
+  details p{color:#c4bcd9;font-size:14px;margin:10px 0 0;}
+  .cta-final{text-align:center;padding:20px 0 10px;}
+</style>
+</head>
+<body>
+<div class="topnav"><a id="home-link" href="./index.html">← На главную</a></div>
+
+<div class="container">
+  <div class="hero">
+    <div class="eyebrow">Дизайн Человека</div>
+    <h1>Узнайте свою природу и живите в согласии с ней</h1>
+    <p>Индивидуальная сессия: разбор вашей карты и практические ответы на вопросы о решениях, отношениях и реализации.</p>
+    <a class="btn-gold" id="book-1" href="https://t.me/username">Записаться на сессию</a>
+  </div>
+
+  <section class="lead">
+    <h2>Что такое Дизайн Человека</h2>
+    <p>Дизайн Человека — это система самопознания, которая объединяет идеи из астрологии, И-Цзин, каббалы и учения о чакрах в единую практическую карту личности.</p>
+    <p>На основе даты, времени и места вашего рождения строится индивидуальная карта — схема вашей энергетики и стратегии взаимодействия с миром.</p>
+    <p>Карта показывает, как вам от природы свойственно принимать решения, восстанавливать силы и выстраивать отношения с другими людьми.</p>
+    <p>Это не предсказание судьбы, а инструмент для того, чтобы лучше понимать себя и меньше жить по чужим сценариям.</p>
+  </section>
+
+  <section>
+    <h2>Что даёт сессия</h2>
+    <div class="grid">
+      <div class="gcard"><h3>Понимание своей природы</h3><p>Увидите свои сильные стороны и то, что раньше казалось «неправильным» в себе.</p></div>
+      <div class="gcard"><h3>Принятие решений</h3><p>Узнаете свою стратегию принятия решений и научитесь меньше сомневаться.</p></div>
+      <div class="gcard"><h3>Отношения</h3><p>Поймёте, как вы взаимодействуете с близкими и коллегами и где источник частых конфликтов.</p></div>
+      <div class="gcard"><h3>Реализация</h3><p>Разберётесь, в каких условиях ваши таланты раскрываются лучше всего.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как проходит сессия</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div><h3>Данные рождения</h3><p>Вы присылаете дату, точное время и место рождения — по ним строится карта.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>Построение карты</h3><p>Я готовлю вашу индивидуальную карту и разбор к встрече.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h3>Разбор 60–90 минут онлайн</h3><p>Подробно разбираем карту и отвечаем на ваши вопросы в формате видеозвонка.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="price-box">
+      <div class="amount" id="price">____ ₽</div>
+      <p>Стоимость одной сессии</p>
+      <a class="btn-gold" id="book-2" href="https://t.me/username">Записаться на сессию</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Частые вопросы</h2>
+    <details>
+      <summary>Нужно ли что-то знать о Дизайне Человека заранее?</summary>
+      <p>Нет, никакой подготовки не требуется. Я всё объясню простыми словами прямо на сессии.</p>
+    </details>
+    <details>
+      <summary>Что если я не знаю точное время рождения?</summary>
+      <p>Постараемся уточнить его по свидетельству о рождении или другим документам. Точность важна для части карты.</p>
+    </details>
+    <details>
+      <summary>Сессия проходит очно или онлайн?</summary>
+      <p>Онлайн, видеозвонком, в удобном для вас мессенджере или сервисе связи.</p>
+    </details>
+    <details>
+      <summary>Можно ли записать сессию на видео?</summary>
+      <p>Да, по договорённости запись можно сделать, чтобы вернуться к разбору позже.</p>
+    </details>
+    <details>
+      <summary>Это замена психологу или врачу?</summary>
+      <p>Нет. Дизайн Человека — инструмент самопознания, а не медицинская или психологическая консультация.</p>
+    </details>
+  </section>
+
+  <div class="cta-final">
+    <a class="btn-gold" id="book-3" href="https://t.me/username">Записаться на сессию</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('home-link').href = LINK_HOME;
+  document.getElementById('book-1').href = LINK_BOOKING;
+  document.getElementById('book-2').href = LINK_BOOKING;
+  document.getElementById('book-3').href = LINK_BOOKING;
+  document.getElementById('price').textContent = PRICE_TEXT;
+</script>
+</body>
+</html>
