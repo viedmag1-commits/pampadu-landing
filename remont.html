@@ -72,18 +72,28 @@
     font-size:14px;color:#2b2b2b;
   }
   .why-item b{display:block;margin-bottom:4px;color:#1f1f1f;font-size:15px;}
-  .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-  .photo-stub{
-    aspect-ratio:1/1;background:#e4e4e4;border-radius:12px;
-    display:flex;align-items:center;justify-content:center;
-    color:#9a9a9a;font-size:13px;
-  }
   .final{
     text-align:center;background:#fdece0;border-radius:18px;padding:28px 20px;
   }
   .final h2{margin-bottom:10px;}
   .final p{font-size:14px;color:#5a5a5a;margin:0 0 20px;}
   .final-actions{display:flex;flex-direction:column;gap:12px;}
+  .case-title{font-size:17px;font-weight:800;margin:0 0 18px;color:#1f1f1f;}
+  .gallery-group{margin-bottom:22px;}
+  .gallery-group:last-child{margin-bottom:0;}
+  .gallery-label{font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin:0 0 10px;}
+  .gallery-label.before{color:#9a9a9a;}
+  .gallery-label.after{color:#d9631e;}
+  .gallery-grid{display:grid;grid-template-columns:1fr;gap:10px;}
+  .gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;cursor:pointer;display:block;background:#eee;}
+  @media(min-width:600px){
+    .gallery-grid{grid-template-columns:1fr 1fr;}
+  }
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:1000;padding:24px;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:100%;max-height:78vh;border-radius:10px;}
+  .lightbox-caption{color:#fff;margin-top:16px;font-size:15px;font-weight:700;letter-spacing:.02em;}
+  .lightbox-close{position:absolute;top:18px;right:22px;color:#fff;font-size:34px;line-height:1;cursor:pointer;background:none;border:none;padding:4px 10px;}
 </style>
 </head>
 <body>
@@ -129,13 +139,28 @@
 
   <section>
     <h2>Примеры работ</h2>
-    <div class="photo-grid">
-      <div class="photo-stub">фото</div>
-      <div class="photo-stub">фото</div>
-      <div class="photo-stub">фото</div>
-      <div class="photo-stub">фото</div>
-      <div class="photo-stub">фото</div>
-      <div class="photo-stub">фото</div>
+    <div class="case">
+      <h3 class="case-title">Двухкомнатная квартира, вторичное жильё — ремонт под ключ</h3>
+
+      <div class="gallery-group">
+        <div class="gallery-label before">До ремонта</div>
+        <div class="gallery-grid">
+          <img src="./do-1.jpg" alt="До ремонта — фото 1" loading="lazy" data-group="До ремонта">
+          <img src="./do-2.jpg" alt="До ремонта — фото 2" loading="lazy" data-group="До ремонта">
+          <img src="./do-3.jpg" alt="До ремонта — фото 3" loading="lazy" data-group="До ремонта">
+          <img src="./do-4.jpg" alt="До ремонта — фото 4" loading="lazy" data-group="До ремонта">
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <div class="gallery-label after">После ремонта</div>
+        <div class="gallery-grid">
+          <img src="./posle-1.jpg" alt="После ремонта — фото 1" loading="lazy" data-group="После ремонта">
+          <img src="./posle-2.jpg" alt="После ремонта — фото 2" loading="lazy" data-group="После ремонта">
+          <img src="./posle-3.jpg" alt="После ремонта — фото 3" loading="lazy" data-group="После ремонта">
+          <img src="./posle-4.jpg" alt="После ремонта — фото 4" loading="lazy" data-group="После ремонта">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -149,12 +174,53 @@
   </section>
 </div>
 
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Закрыть">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
 <script>
   document.getElementById('home-link').href = LINK_HOME;
   document.getElementById('cta-1').href = LINK_TELEGRAM;
   document.getElementById('cta-2').href = LINK_TELEGRAM;
   document.getElementById('cta-phone').href = LINK_PHONE;
   document.getElementById('cta-phone').textContent = PHONE_TEXT;
+
+  (function () {
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightbox-img');
+    var lbCaption = document.getElementById('lightbox-caption');
+    var closeBtn = document.getElementById('lightbox-close');
+
+    function openLightbox(img) {
+      lbImg.src = img.getAttribute('src');
+      lbImg.alt = img.getAttribute('alt') || '';
+      lbCaption.textContent = img.getAttribute('data-group') || '';
+      lb.classList.add('open');
+    }
+
+    function closeLightbox() {
+      lb.classList.remove('open');
+      lbImg.src = '';
+    }
+
+    document.querySelectorAll('.gallery-grid img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        openLightbox(img);
+      });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    lb.addEventListener('click', function (e) {
+      if (e.target === lb) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  })();
 </script>
 </body>
 </html>
