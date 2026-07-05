@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Личная страница — визитка</title>
+<meta name="description" content="Личная визитка: ремонт под ключ, IT-фриланс, сессии по Дизайну Человека и другие проекты." />
+<script>
+  // ===== Константы-ссылки (заглушки, заменить на реальные) =====
+  const LINK_REMONT   = '#remont';
+  const LINK_HD       = './human-design.html';
+  const LINK_KARTA    = './karta.html';
+  const LINK_SBOR     = './sbor.html';
+  const LINK_TELEGRAM = 'https://t.me/username';
+  const LINK_VK       = 'https://vk.com/username';
+</script>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:#0d0e12;
+    color:#f2f1ee;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.5;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px 60px;
+  }
+  .wrap{width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center;}
+  .avatar{
+    width:120px;height:120px;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #3a3d46, #17181c);
+    border:1px solid #33353c;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;color:#8b8d97;
+    margin-bottom:24px;
+    letter-spacing:.02em;
+  }
+  h1{
+    font-size:30px;
+    font-weight:700;
+    margin:0 0 12px;
+    text-align:center;
+    letter-spacing:-.01em;
+  }
+  .bio{
+    text-align:center;
+    color:#c3c4cc;
+    font-size:16px;
+    margin:0 0 36px;
+    max-width:360px;
+  }
+  .bio p{margin:4px 0;}
+  .cards{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    margin-bottom:40px;
+  }
+  .card{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    width:100%;
+    background:#17181d;
+    border:1px solid #2a2c33;
+    border-radius:18px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:inherit;
+    transition:transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .card:active{transform:scale(.98);background:#1d1f26;}
+  @media (hover:hover){
+    .card:hover{border-color:#4a4d58;background:#1b1c22;}
+  }
+  .card-ico{font-size:28px;line-height:1;flex-shrink:0;width:40px;text-align:center;}
+  .card-text h2{font-size:18px;margin:0 0 4px;font-weight:600;}
+  .card-text p{font-size:14px;margin:0;color:#9a9ba5;}
+  .contacts{
+    display:flex;
+    gap:14px;
+    width:100%;
+  }
+  .contact-btn{
+    flex:1;
+    text-align:center;
+    padding:14px 10px;
+    border-radius:14px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+    border:1px solid #34363e;
+    color:#f2f1ee;
+    background:#17181d;
+  }
+  .contact-btn.tg{border-color:#2b6bb0;}
+  .contact-btn.vk{border-color:#3a5f8a;}
+  footer{margin-top:40px;color:#5c5e68;font-size:12px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="avatar" id="avatar">ФОТО</div>
+  <h1 id="name">Имя Фамилия</h1>
+  <div class="bio">
+    <p>Мастер ремонта под ключ в Саратове</p>
+    <p>IT-фрилансер</p>
+    <p>Провожу сессии по Дизайну Человека</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" id="card-remont" href="#remont">
+      <div class="card-ico">🏠</div>
+      <div class="card-text">
+        <h2>Ремонт под ключ</h2>
+        <p>Квартиры и помещения в Саратове</p>
+      </div>
+    </a>
+    <a class="card" id="card-hd" href="./human-design.html">
+      <div class="card-ico">🔮</div>
+      <div class="card-text">
+        <h2>Дизайн Человека</h2>
+        <p>Индивидуальные сессии и разбор карты</p>
+      </div>
+    </a>
+    <a class="card" id="card-karta" href="./karta.html">
+      <div class="card-ico">💳</div>
+      <div class="card-text">
+        <h2>КартаВыгода</h2>
+        <p>Подбор выгодных банковских карт</p>
+      </div>
+    </a>
+    <a class="card" id="card-sbor" href="./sbor.html">
+      <div class="card-ico">🦷</div>
+      <div class="card-text">
+        <h2>Моя история</h2>
+        <p>Сбор на восстановление зубов</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="contacts">
+    <a class="contact-btn tg" id="link-telegram" href="https://t.me/username">Telegram</a>
+    <a class="contact-btn vk" id="link-vk" href="https://vk.com/username">VK</a>
+  </div>
+
+  <footer>© 2026</footer>
+</div>
+
+<script>
+  document.getElementById('card-remont').href = LINK_REMONT;
+  document.getElementById('card-hd').href = LINK_HD;
+  document.getElementById('card-karta').href = LINK_KARTA;
+  document.getElementById('card-sbor').href = LINK_SBOR;
+  document.getElementById('link-telegram').href = LINK_TELEGRAM;
+  document.getElementById('link-vk').href = LINK_VK;
+</script>
+</body>
+</html>
