@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ремонт под ключ в Саратове</title>
+<meta name="description" content="Ремонт квартир, домов и коммерческих помещений под ключ в Саратове. Честная смета, работа без посредников, фотоотчёты на каждом этапе." />
+<script>
+  // ===== Константы-ссылки (заглушки, заменить на реальные) =====
+  const LINK_HOME     = './index.html';
+  const LINK_TELEGRAM = 'https://t.me/username';
+  const LINK_PHONE    = 'tel:+70000000000';
+  const PHONE_TEXT    = '+7 (___) ___-__-__';
+</script>
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:#ffffff;
+    color:#2b2b2b;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .container{max-width:480px;margin:0 auto;padding:0 20px 60px;}
+  .topnav{padding:16px 20px;}
+  .topnav a{color:#c65a1e;text-decoration:none;font-size:14px;font-weight:600;}
+  .hero{padding:20px 0 36px;text-align:center;border-bottom:1px solid #eee;margin-bottom:36px;}
+  .hero h1{font-size:28px;margin:0 0 12px;font-weight:800;color:#1f1f1f;}
+  .hero p{font-size:16px;color:#5a5a5a;margin:0 0 24px;}
+  .btn{
+    display:inline-block;
+    background:#d9631e;
+    color:#fff;
+    font-weight:700;
+    padding:15px 26px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:15px;
+  }
+  .btn-outline{
+    display:inline-block;
+    background:#fff;
+    color:#d9631e;
+    border:2px solid #d9631e;
+    font-weight:700;
+    padding:13px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:15px;
+  }
+  section{margin:40px 0;}
+  h2{font-size:21px;margin:0 0 18px;font-weight:800;color:#1f1f1f;}
+  .grid{display:flex;flex-direction:column;gap:12px;}
+  .service{
+    display:flex;align-items:center;gap:14px;
+    background:#faf9f7;border:1px solid #eee;border-radius:14px;padding:16px 18px;
+  }
+  .service .ico{font-size:24px;flex-shrink:0;width:32px;text-align:center;}
+  .service span.txt{font-size:15px;font-weight:600;color:#2b2b2b;}
+  .steps{display:flex;flex-direction:column;gap:16px;}
+  .step{display:flex;gap:14px;align-items:flex-start;}
+  .step-num{
+    flex-shrink:0;width:32px;height:32px;border-radius:50%;
+    background:#fdece0;border:1px solid #d9631e;
+    color:#c65a1e;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;
+  }
+  .step h3{margin:0 0 4px;font-size:15px;color:#1f1f1f;}
+  .step p{margin:0;font-size:14px;color:#5a5a5a;}
+  .why-list{display:flex;flex-direction:column;gap:12px;}
+  .why-item{
+    background:#faf9f7;border:1px solid #eee;border-radius:14px;padding:16px 18px;
+    font-size:14px;color:#2b2b2b;
+  }
+  .why-item b{display:block;margin-bottom:4px;color:#1f1f1f;font-size:15px;}
+  .photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .photo-stub{
+    aspect-ratio:1/1;background:#e4e4e4;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    color:#9a9a9a;font-size:13px;
+  }
+  .final{
+    text-align:center;background:#fdece0;border-radius:18px;padding:28px 20px;
+  }
+  .final h2{margin-bottom:10px;}
+  .final p{font-size:14px;color:#5a5a5a;margin:0 0 20px;}
+  .final-actions{display:flex;flex-direction:column;gap:12px;}
+</style>
+</head>
+<body>
+<div class="topnav"><a id="home-link" href="./index.html">← На главную</a></div>
+
+<div class="container">
+  <div class="hero">
+    <h1>Ремонт под ключ в Саратове</h1>
+    <p>Квартиры, дома, коммерческие помещения</p>
+    <a class="btn" id="cta-1" href="https://t.me/username">Обсудить проект</a>
+  </div>
+
+  <section>
+    <h2>Услуги</h2>
+    <div class="grid">
+      <div class="service"><span class="ico">🧱</span><span class="txt">Черновая отделка</span></div>
+      <div class="service"><span class="ico">🎨</span><span class="txt">Чистовая отделка</span></div>
+      <div class="service"><span class="ico">⚡</span><span class="txt">Электрика</span></div>
+      <div class="service"><span class="ico">🚿</span><span class="txt">Сантехника</span></div>
+      <div class="service"><span class="ico">🏗️</span><span class="txt">Потолки и стены</span></div>
+      <div class="service"><span class="ico">🔲</span><span class="txt">Укладка плитки</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как работаю</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div><h3>Замер и смета</h3><p>Выезжаю на объект, обсуждаю пожелания и составляю подробную смету.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>Договор</h3><p>Фиксируем объём работ, сроки и стоимость письменно.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h3>Работы поэтапно</h3><p>Провожу ремонт по этапам с фотоотчётом на каждом шаге.</p></div></div>
+      <div class="step"><div class="step-num">4</div><div><h3>Сдача объекта</h3><p>Принимаем результат вместе, устраняю замечания при необходимости.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Почему я</h2>
+    <div class="why-list">
+      <div class="why-item"><b>Работаю сам, без посредников</b>Вы общаетесь напрямую со мной на всех этапах — без прорабов-передатчиков.</div>
+      <div class="why-item"><b>Честная смета</b>Стоимость фиксируется заранее, без скрытых доплат по ходу работ.</div>
+      <div class="why-item"><b>Фотоотчёты</b>На каждом этапе присылаю фото — вы видите прогресс, даже если не можете приехать на объект.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Примеры работ</h2>
+    <div class="photo-grid">
+      <div class="photo-stub">фото</div>
+      <div class="photo-stub">фото</div>
+      <div class="photo-stub">фото</div>
+      <div class="photo-stub">фото</div>
+      <div class="photo-stub">фото</div>
+      <div class="photo-stub">фото</div>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>Обсудим ваш проект?</h2>
+    <p>Напишите в Telegram или позвоните — отвечу и посчитаю смету.</p>
+    <div class="final-actions">
+      <a class="btn" id="cta-2" href="https://t.me/username">Написать в Telegram</a>
+      <a class="btn-outline" id="cta-phone" href="tel:+70000000000">+7 (___) ___-__-__</a>
+    </div>
+  </section>
+</div>
+
+<script>
+  document.getElementById('home-link').href = LINK_HOME;
+  document.getElementById('cta-1').href = LINK_TELEGRAM;
+  document.getElementById('cta-2').href = LINK_TELEGRAM;
+  document.getElementById('cta-phone').href = LINK_PHONE;
+  document.getElementById('cta-phone').textContent = PHONE_TEXT;
+</script>
+</body>
+</html>
