@@ -1,36 +1,13 @@
-/* =========================================================================
-   КАТАЛОГ КАРТ — реальные офферы Пампаду (кабинет id 293285)
-   =========================================================================
-
-   КАК ВСТАВИТЬ ПАРТНЁРСКИЕ ССЫЛКИ (после одобрения модерацией):
-   1) Зайдите в Пампаду → откройте нужную карту (offerId указан у каждой ниже,
-      адрес: https://agents.pampadu.ru/app/offer/view/<offerId>).
-   2) Когда оффер одобрен — кнопка «Открыть лендинг» станет активной.
-   3) Нажмите её → откроется ваш партнёрский лендинг. Скопируйте его адрес
-      из строки браузера (в нём зашит ваш трек-код).
-   4) Вставьте этот адрес в поле  link:  у соответствующей карты,
-      заменив текст  "#СКОРО_после_модерации".
-
-   type: "debit" (дебетовая) или "credit" (кредитная).
-   ========================================================================= */
+/* ============================================================
+   КАТАЛОГ КАРТ — реальные предложения Пампаду (кабинет 293285)
+   На странице только дебетовые и кредитные карты.
+   Полный автообновляемый каталог — на витрине:
+   https://ppdu.ru/1f4d0ced-f2ae-4307-a3e2-3a1308aa8939
+   type: "debit" | "credit"
+   ============================================================ */
 
 const CARDS = [
   /* ---------- ДЕБЕТОВЫЕ ---------- */
-  {
-    bank: "Банк ПСБ",
-    name: "Дебетовая «Твой Кешбэк»",
-    type: "debit",
-    rating: 4.9,
-    offerId: "47f04eab-74f8-443d-ae09-9f97df45e0f5",
-    gradient: "linear-gradient(135deg,#0a4ea8,#1666c8)",
-    specs: [
-      { k: "Приветственный кэшбэк", v: "25% (3 мес.)" },
-      { k: "Кэшбэк в категориях", v: "до 5%" },
-      { k: "Обслуживание", v: "0 ₽ навсегда" }
-    ],
-    tags: ["Бесплатно навсегда", "Кэшбэк на всё", "Карта МИР"],
-    link: "https://trk.ppdu.ru/click/Ik2W7bFJ?erid=2SDnjehD1C8&siteId=23657"
-  },
   {
     bank: "ВТБ",
     name: "Дебетовая весёлая карта МИР",
@@ -45,21 +22,6 @@ const CARDS = [
     ],
     tags: ["Бесплатная", "Кэшбэк рублями", "Карта МИР"],
     link: "https://trk.ppdu.ru/click/dqMrRH4p?erid=2SDnjbxUxwk&siteId=23657"
-  },
-  {
-    bank: "Банк ПСБ",
-    name: "«Твой Кешбэк» + Пятёрочка",
-    type: "debit",
-    rating: 4.7,
-    offerId: "2286e697-c5d5-49f9-ac2d-064ec206ea2a",
-    gradient: "linear-gradient(135deg,#0a4ea8,#0f57bf)",
-    specs: [
-      { k: "Подарок", v: "сертификат Пятёрочки" },
-      { k: "Кэшбэк в категориях", v: "до 5%" },
-      { k: "Обслуживание", v: "0 ₽" }
-    ],
-    tags: ["Подарок Пятёрочка", "Бесплатная"],
-    link: "https://trk.ppdu.ru/click/8qXkyaAR?erid=2SDnjeh5bv2&siteId=23656"
   },
   {
     bank: "Т-Банк",
@@ -166,6 +128,48 @@ const CARDS = [
     tags: ["100% за топливо", "Карта МИР"],
     link: "https://trk.ppdu.ru/click/jjBBBPPC?erid=2SDnjemFSoC"
   },
+  {
+    bank: "Уралсиб",
+    name: "Дебетовая карта «Прибыль»",
+    type: "debit",
+    rating: 4.6,
+    gradient: "linear-gradient(135deg,#3f2b96,#5a4fcf)",
+    specs: [
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
+    ],
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/hT2RPZqR?erid=2SDnjbpvGx2"
+  },
+  {
+    bank: "Фора-Банк",
+    name: "Дебетовая карта",
+    type: "debit",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#b01116,#7d0c10)",
+    specs: [
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
+    ],
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/xkO4Mfzr?erid=2SDnjeLQiFt"
+  },
+  {
+    bank: "Россельхозбанк",
+    name: "Дебетовая карта",
+    type: "debit",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#005f27,#00843a)",
+    specs: [
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
+    ],
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/mBMTeKOC?erid=2SDnjf3YxGr"
+  },
   /* ---------- КРЕДИТНЫЕ ---------- */
   {
     bank: "ВТБ",
@@ -212,21 +216,6 @@ const CARDS = [
     link: "https://trk.ppdu.ru/click/DF37bDI8?erid=2SDnjf24dte"
   },
   {
-    bank: "Альфа-Банк",
-    name: "Кредитная «60 дней без %»",
-    type: "credit",
-    rating: 4.7,
-    offerId: "27b26549-407c-421a-b73d-472c031e331c",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Без процентов", v: "до 60 дней" },
-      { k: "Кредитный лимит", v: "до 500 000 ₽" },
-      { k: "Снятие наличных", v: "в льготный период" }
-    ],
-    tags: ["60 дней без %", "Снятие без потери льготы"],
-    link: "#СКОРО_после_модерации"
-  },
-  {
     bank: "Яндекс Пэй",
     name: "Кредитная «Супер Сплит»",
     type: "credit",
@@ -269,141 +258,76 @@ const CARDS = [
     tags: ["Кэшбэк на Ozon", "Без скрытых платежей"],
     link: "https://trk.ppdu.ru/click/sdKfuq9q?erid=2SDnjcGXYYi"
   },
-
-  /* ---------- КРЕДИТЫ / ИПОТЕКА ---------- */
   {
-    bank: "Альфа-Банк",
-    name: "Кредит наличными на любые цели",
-    type: "loan",
-    rating: 4.7,
-    offerId: "69875f12-3062-4290-a5ad-ddf0ab879591",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Сумма", v: "до 30 000 000 ₽" },
-      { k: "Ставка", v: "от рекламной" },
-      { k: "Решение", v: "онлайн" }
-    ],
-    tags: ["Без залога", "Решение онлайн"],
-    link: "https://trk.ppdu.ru/click/JItOaw1l?erid=2SDnjeBUY44"
-  },
-  {
-    bank: "Альфа-Банк",
-    name: "Ипотека",
-    type: "loan",
+    bank: "Ак Барс Банк",
+    name: "Кредитная «115 дней без %»",
+    type: "credit",
     rating: 4.6,
-    offerId: "654c909c-6175-4d44-b456-a02a2abead89",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    gradient: "linear-gradient(135deg,#00794f,#00a651)",
     specs: [
-      { k: "Ставка", v: "от рекламной" },
-      { k: "Первый взнос", v: "от 0%" },
-      { k: "Одобрение", v: "онлайн" }
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
     ],
-    tags: ["Ипотека", "Одобрение онлайн"],
-    link: "https://trk.ppdu.ru/click/IJIWzRPC?erid=2SDnjefNWrN"
-  },
-
-  /* ---------- РКО / БИЗНЕС ---------- */
-  {
-    bank: "Альфа-Банк",
-    name: "Регистрация бизнеса + РКО",
-    type: "business",
-    rating: 4.7,
-    offerId: "a2a06289-081c-402f-9cd7-dbd38ac11be7",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Регистрация бизнеса", v: "бесплатно" },
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
-    ],
-    tags: ["Регистрация бизнеса", "РКО"],
-    link: "https://trk.ppdu.ru/click/jXyEiaoK?erid=2SDnjeEA46e"
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/Gl6H8QE5?erid=2SDnjdG7KhL"
   },
   {
-    bank: "ВТБ",
-    name: "Регистрация бизнеса + РКО",
-    type: "business",
-    rating: 4.7,
-    gradient: "linear-gradient(135deg,#0a2896,#1e50d6)",
-    specs: [
-      { k: "Регистрация бизнеса", v: "бесплатно" },
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
-    ],
-    tags: ["Регистрация бизнеса", "РКО"],
-    link: "https://trk.ppdu.ru/click/cNVX7lv7?erid=Kra23bNL5"
-  },
-  {
-    bank: "ОТП Банк",
-    name: "РКО",
-    type: "business",
-    rating: 4.5,
-    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
-    specs: [
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Обслуживание", v: "от 0 ₽" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
-    ],
-    tags: ["РКО", "Для бизнеса"],
-    link: "https://trk.ppdu.ru/click/RpTTCCcv?erid=2SDnjerCCxU"
-  },
-  {
-    bank: "Банк ПСБ",
-    name: "РКО",
-    type: "business",
+    bank: "Совкомбанк",
+    name: "Кредитная «180 дней без %»",
+    type: "credit",
     rating: 4.6,
-    gradient: "linear-gradient(135deg,#0a4ea8,#1666c8)",
+    gradient: "linear-gradient(135deg,#d70f21,#8e0a16)",
     specs: [
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Обслуживание", v: "от 0 ₽" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
     ],
-    tags: ["РКО", "Для бизнеса"],
-    link: "https://trk.ppdu.ru/click/hGElrPIc?erid=Kra23mn2h"
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/wSGGF9c0?erid=2SDnjcis6h7"
   },
   {
-    bank: "Точка Банк",
-    name: "РКО",
-    type: "business",
-    rating: 4.8,
-    gradient: "linear-gradient(135deg,#ffd400,#f7b500)",
-    specs: [
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Обслуживание", v: "от 0 ₽" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
-    ],
-    tags: ["РКО", "Для бизнеса"],
-    link: "https://trk.ppdu.ru/click/1pMUYSxL?erid=2SDnjduYB12"
-  },
-  {
-    bank: "БСПБ",
-    name: "РКО",
-    type: "business",
+    bank: "МТС Банк",
+    name: "Кредитная карта",
+    type: "credit",
     rating: 4.5,
-    gradient: "linear-gradient(135deg,#003876,#0058b0)",
+    gradient: "linear-gradient(135deg,#e30611,#9c040c)",
     specs: [
-      { k: "Открытие счёта", v: "бесплатно" },
-      { k: "Обслуживание", v: "от 0 ₽" },
-      { k: "Для бизнеса", v: "ИП и ООО" }
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
     ],
-    tags: ["РКО", "Для бизнеса"],
-    link: "https://trk.ppdu.ru/click/ltN2QAqq?erid=2SDnjeLA2cx"
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/UaoZ5hgw?erid=2SDnjd37HUR"
   },
-
-  /* ---------- ВАКАНСИИ ---------- */
   {
-    bank: "Альфа-Банк",
-    name: "Мобильный банкир",
-    type: "work",
-    rating: 4.7,
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    bank: "Кредит Европа Банк",
+    name: "Кредитная карта",
+    type: "credit",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#003a70,#0a5aa8)",
     specs: [
-      { k: "Доход", v: "сдельная оплата" },
-      { k: "График", v: "свободный" },
-      { k: "Оформление", v: "удалённо, без опыта" }
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
     ],
-    tags: ["Без опыта", "Подработка", "Малые города"],
-    link: "https://trk.ppdu.ru/click/MtRx2Hjm?erid=2SDnjcN7Hxq"
-  }
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/Be6epAq2?erid=2SDnjdLFXE2"
+  },
+  {
+    bank: "Зенит Банк",
+    name: "Кредитная карта",
+    type: "credit",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#0072bc,#00a3e0)",
+    specs: [
+      { k: "Условия", v: "уточняйте при оформлении" },
+      { k: "Заявка", v: "онлайн" },
+      { k: "Оформление", v: "бесплатно" }
+    ],
+    tags: ["Заявка онлайн", "Бесплатно"],
+    link: "https://trk.ppdu.ru/click/OnRQ3iJA?erid=2SDnjdGKRVJ"
+  },
 ];
 
 /* ---------- Рендер карточек ---------- */
