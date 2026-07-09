@@ -5,7 +5,6 @@
    https://ppdu.ru/1f4d0ced-f2ae-4307-a3e2-3a1308aa8939
    type: "debit" | "credit"
    ============================================================ */
-
 const CARDS = [
   /* ---------- ДЕБЕТОВЫЕ ---------- */
   {
@@ -328,6 +327,165 @@ const CARDS = [
     tags: ["Заявка онлайн", "Бесплатно"],
     link: "https://trk.ppdu.ru/click/OnRQ3iJA?erid=2SDnjdGKRVJ"
   },
+  {
+    bank: "Банк ПСБ",
+    name: "Дебетовая «Твой Кешбэк»",
+    type: "debit",
+    rating: 4.9,
+    offerId: "47f04eab-74f8-443d-ae09-9f97df45e0f5",
+    gradient: "linear-gradient(135deg,#0a4ea8,#1666c8)",
+    specs: [
+      { k: "Приветственный кэшбэк", v: "25% (3 мес.)" },
+      { k: "Кэшбэк в категориях", v: "до 5%" },
+      { k: "Обслуживание", v: "0 ₽ навсегда" }
+    ],
+    tags: ["Бесплатно навсегда", "Кэшбэк на всё", "Карта МИР"],
+    link: "https://trk.ppdu.ru/click/Ik2W7bFJ?erid=2SDnjehD1C8&siteId=23657"
+  },
+  {
+    bank: "Банк ПСБ",
+    name: "«Твой Кешбэк» + Пятёрочка",
+    type: "debit",
+    rating: 4.7,
+    offerId: "2286e697-c5d5-49f9-ac2d-064ec206ea2a",
+    gradient: "linear-gradient(135deg,#0a4ea8,#0f57bf)",
+    specs: [
+      { k: "Подарок", v: "сертификат Пятёрочки" },
+      { k: "Кэшбэк в категориях", v: "до 5%" },
+      { k: "Обслуживание", v: "0 ₽" }
+    ],
+    tags: ["Подарок Пятёрочка", "Бесплатная"],
+    link: "https://trk.ppdu.ru/click/8qXkyaAR?erid=2SDnjeh5bv2&siteId=23656"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Кредит наличными на любые цели",
+    type: "loan",
+    rating: 4.7,
+    offerId: "69875f12-3062-4290-a5ad-ddf0ab879591",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Сумма", v: "до 30 000 000 ₽" },
+      { k: "Ставка", v: "от рекламной" },
+      { k: "Решение", v: "онлайн" }
+    ],
+    tags: ["Без залога", "Решение онлайн"],
+    link: "https://trk.ppdu.ru/click/JItOaw1l?erid=2SDnjeBUY44"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Ипотека",
+    type: "loan",
+    rating: 4.6,
+    offerId: "654c909c-6175-4d44-b456-a02a2abead89",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Ставка", v: "от рекламной" },
+      { k: "Первый взнос", v: "от 0%" },
+      { k: "Одобрение", v: "онлайн" }
+    ],
+    tags: ["Ипотека", "Одобрение онлайн"],
+    link: "https://trk.ppdu.ru/click/IJIWzRPC?erid=2SDnjefNWrN"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Регистрация бизнеса + РКО",
+    type: "business",
+    rating: 4.7,
+    offerId: "a2a06289-081c-402f-9cd7-dbd38ac11be7",
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Регистрация бизнеса", v: "бесплатно" },
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["Регистрация бизнеса", "РКО"],
+    link: "https://trk.ppdu.ru/click/jXyEiaoK?erid=2SDnjeEA46e"
+  },
+  {
+    bank: "ВТБ",
+    name: "Регистрация бизнеса + РКО",
+    type: "business",
+    rating: 4.7,
+    gradient: "linear-gradient(135deg,#0a2896,#1e50d6)",
+    specs: [
+      { k: "Регистрация бизнеса", v: "бесплатно" },
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["Регистрация бизнеса", "РКО"],
+    link: "https://trk.ppdu.ru/click/cNVX7lv7?erid=Kra23bNL5"
+  },
+  {
+    bank: "ОТП Банк",
+    name: "РКО",
+    type: "business",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/RpTTCCcv?erid=2SDnjerCCxU"
+  },
+  {
+    bank: "Банк ПСБ",
+    name: "РКО",
+    type: "business",
+    rating: 4.6,
+    gradient: "linear-gradient(135deg,#0a4ea8,#1666c8)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/hGElrPIc?erid=Kra23mn2h"
+  },
+  {
+    bank: "Точка Банк",
+    name: "РКО",
+    type: "business",
+    rating: 4.8,
+    gradient: "linear-gradient(135deg,#ffd400,#f7b500)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/1pMUYSxL?erid=2SDnjduYB12"
+  },
+  {
+    bank: "БСПБ",
+    name: "РКО",
+    type: "business",
+    rating: 4.5,
+    gradient: "linear-gradient(135deg,#003876,#0058b0)",
+    specs: [
+      { k: "Открытие счёта", v: "бесплатно" },
+      { k: "Обслуживание", v: "от 0 ₽" },
+      { k: "Для бизнеса", v: "ИП и ООО" }
+    ],
+    tags: ["РКО", "Для бизнеса"],
+    link: "https://trk.ppdu.ru/click/ltN2QAqq?erid=2SDnjeLA2cx"
+  },
+  {
+    bank: "Альфа-Банк",
+    name: "Мобильный банкир",
+    type: "work",
+    rating: 4.7,
+    gradient: "linear-gradient(135deg,#e30613,#b00510)",
+    specs: [
+      { k: "Доход", v: "сдельная оплата" },
+      { k: "График", v: "свободный" },
+      { k: "Оформление", v: "удалённо, без опыта" }
+    ],
+    tags: ["Без опыта", "Подработка", "Малые города"],
+    link: "https://trk.ppdu.ru/click/MtRx2Hjm?erid=2SDnjcN7Hxq"
+  }
 ];
 
 /* ---------- Рендер карточек ---------- */
