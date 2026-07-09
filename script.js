@@ -139,7 +139,7 @@ const CARDS = [
       { k: "Оформление", v: "бесплатно" }
     ],
     tags: ["Заявка онлайн", "Бесплатно"],
-    link: "https://trk.ppdu.ru/click/hT2RPZqR?erid=2SDnjbpvGx2"
+    link: "https://trk.ppdu.ru/click/wsyN2nUV?erid=2SDnjcAcyAz"
   },
   {
     bank: "Фора-Банк",
@@ -269,35 +269,7 @@ const CARDS = [
       { k: "Оформление", v: "бесплатно" }
     ],
     tags: ["Заявка онлайн", "Бесплатно"],
-    link: "https://trk.ppdu.ru/click/Gl6H8QE5?erid=2SDnjdG7KhL"
-  },
-  {
-    bank: "Совкомбанк",
-    name: "Кредитная «180 дней без %»",
-    type: "credit",
-    rating: 4.6,
-    gradient: "linear-gradient(135deg,#d70f21,#8e0a16)",
-    specs: [
-      { k: "Условия", v: "уточняйте при оформлении" },
-      { k: "Заявка", v: "онлайн" },
-      { k: "Оформление", v: "бесплатно" }
-    ],
-    tags: ["Заявка онлайн", "Бесплатно"],
-    link: "https://trk.ppdu.ru/click/wSGGF9c0?erid=2SDnjcis6h7"
-  },
-  {
-    bank: "МТС Банк",
-    name: "Кредитная карта",
-    type: "credit",
-    rating: 4.5,
-    gradient: "linear-gradient(135deg,#e30611,#9c040c)",
-    specs: [
-      { k: "Условия", v: "уточняйте при оформлении" },
-      { k: "Заявка", v: "онлайн" },
-      { k: "Оформление", v: "бесплатно" }
-    ],
-    tags: ["Заявка онлайн", "Бесплатно"],
-    link: "https://trk.ppdu.ru/click/UaoZ5hgw?erid=2SDnjd37HUR"
+    link: "https://trk.ppdu.ru/click/dbT9t1ub?erid=2SDnjbrXxdX"
   },
   {
     bank: "Кредит Европа Банк",
@@ -398,7 +370,7 @@ const CARDS = [
       { k: "Для бизнеса", v: "ИП и ООО" }
     ],
     tags: ["РКО", "Для бизнеса"],
-    link: "https://trk.ppdu.ru/click/RpTTCCcv?erid=2SDnjerCCxU"
+    link: "https://trk.ppdu.ru/click/9m7Vav3s?erid=2SDnjcWwygv"
   },
   {
     bank: "Банк ПСБ",
