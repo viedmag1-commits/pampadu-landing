@@ -99,6 +99,44 @@
   }
   .contact-btn.tg{border-color:#2b6bb0;}
   .contact-btn.vk{border-color:#3a5f8a;}
+  .lead-form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    background:#17181d;
+    border:1px solid #2a2c33;
+    border-radius:18px;
+    padding:22px 20px;
+    margin-top:28px;
+  }
+  .lead-title{font-size:18px;margin:0;font-weight:600;}
+  .lead-sub{font-size:14px;margin:0 0 4px;color:#9a9ba5;}
+  .lead-form input,.lead-form textarea{
+    width:100%;
+    background:#0d0e12;
+    border:1px solid #34363e;
+    border-radius:10px;
+    padding:12px 14px;
+    color:#f2f1ee;
+    font-size:15px;
+    font-family:inherit;
+    resize:vertical;
+  }
+  .lead-form input::placeholder,.lead-form textarea::placeholder{color:#6c6e79;}
+  .lead-form button{
+    margin-top:4px;
+    padding:14px 10px;
+    border:none;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    background:#2b6bb0;
+    cursor:pointer;
+  }
+  .lead-form button:disabled{opacity:.6;cursor:default;}
+  .lead-status{font-size:13px;margin:8px 0 0;text-align:center;}
   footer{margin-top:40px;color:#5c5e68;font-size:12px;text-align:center;}
 </style>
 </head>
@@ -148,6 +186,18 @@
     <a class="contact-btn vk" id="link-vk" href="https://vk.ru/viedmag">VK</a>
   </div>
 
+  <form class="lead-form" id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="f3e6a285-ce5f-4909-b941-0b0c574fe20e" />
+    <input type="hidden" name="subject" value="Новая заявка с сайта-визитки" />
+    <h2 class="lead-title">Оставить заявку</h2>
+    <p class="lead-sub">Оставьте имя и телефон — перезвоню сам</p>
+    <input type="text" name="name" placeholder="Ваше имя" required />
+    <input type="tel" name="phone" placeholder="Телефон" required />
+    <textarea name="message" placeholder="Комментарий (необязательно)" rows="3"></textarea>
+    <button type="submit">Отправить заявку</button>
+    <p class="lead-status" id="leadFormStatus" hidden></p>
+  </form>
+
   <footer>© 2026</footer>
 </div>
 
@@ -158,6 +208,37 @@
   document.getElementById('card-sbor').href = LINK_SBOR;
   document.getElementById('link-telegram').href = LINK_TELEGRAM;
   document.getElementById('link-vk').href = LINK_VK;
+
+  document.getElementById('leadForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const status = document.getElementById('leadFormStatus');
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Отправка...';
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.reset();
+        status.textContent = 'Спасибо! Заявка отправлена, скоро свяжусь с вами.';
+        status.style.color = '#4caf7d';
+      } else {
+        throw new Error(data.message || 'Ошибка отправки');
+      }
+    } catch (err) {
+      status.textContent = 'Не получилось отправить. Напишите, пожалуйста, в Telegram.';
+      status.style.color = '#e05d5d';
+    } finally {
+      status.hidden = false;
+      btn.disabled = false;
+      btn.textContent = 'Отправить заявку';
+    }
+  });
 </script>
 </body>
 </html>
