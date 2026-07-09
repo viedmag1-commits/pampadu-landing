@@ -1,9 +1,9 @@
 /* ============================================================
    КАТАЛОГ КАРТ — реальные предложения Пампаду (кабинет 293285)
-   На странице только дебетовые и кредитные карты.
+   На странице дебетовые, кредитные карты и РКО для бизнеса.
    Полный автообновляемый каталог — на витрине:
    https://ppdu.ru/1f4d0ced-f2ae-4307-a3e2-3a1308aa8939
-   type: "debit" | "credit"
+   type: "debit" | "credit" | "business"
    ============================================================ */
 const CARDS = [
   /* ---------- ДЕБЕТОВЫЕ ---------- */
@@ -359,36 +359,6 @@ const CARDS = [
   },
   {
     bank: "Альфа-Банк",
-    name: "Кредит наличными на любые цели",
-    type: "loan",
-    rating: 4.7,
-    offerId: "69875f12-3062-4290-a5ad-ddf0ab879591",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Сумма", v: "до 30 000 000 ₽" },
-      { k: "Ставка", v: "от рекламной" },
-      { k: "Решение", v: "онлайн" }
-    ],
-    tags: ["Без залога", "Решение онлайн"],
-    link: "https://trk.ppdu.ru/click/JItOaw1l?erid=2SDnjeBUY44"
-  },
-  {
-    bank: "Альфа-Банк",
-    name: "Ипотека",
-    type: "loan",
-    rating: 4.6,
-    offerId: "654c909c-6175-4d44-b456-a02a2abead89",
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Ставка", v: "от рекламной" },
-      { k: "Первый взнос", v: "от 0%" },
-      { k: "Одобрение", v: "онлайн" }
-    ],
-    tags: ["Ипотека", "Одобрение онлайн"],
-    link: "https://trk.ppdu.ru/click/IJIWzRPC?erid=2SDnjefNWrN"
-  },
-  {
-    bank: "Альфа-Банк",
     name: "Регистрация бизнеса + РКО",
     type: "business",
     rating: 4.7,
@@ -471,20 +441,6 @@ const CARDS = [
     ],
     tags: ["РКО", "Для бизнеса"],
     link: "https://trk.ppdu.ru/click/ltN2QAqq?erid=2SDnjeLA2cx"
-  },
-  {
-    bank: "Альфа-Банк",
-    name: "Мобильный банкир",
-    type: "work",
-    rating: 4.7,
-    gradient: "linear-gradient(135deg,#e30613,#b00510)",
-    specs: [
-      { k: "Доход", v: "сдельная оплата" },
-      { k: "График", v: "свободный" },
-      { k: "Оформление", v: "удалённо, без опыта" }
-    ],
-    tags: ["Без опыта", "Подработка", "Малые города"],
-    link: "https://trk.ppdu.ru/click/MtRx2Hjm?erid=2SDnjcN7Hxq"
   }
 ];
 
@@ -503,10 +459,8 @@ function cardHTML(c) {
   const typeLabel =
     c.type === "credit" ? "Кредитная" :
     c.type === "business" ? "РКО" :
-    c.type === "work" ? "Вакансия" :
-    c.type === "loan" ? "Кредит/Ипотека" :
     "Дебетовая";
-  const ctaText = c.type === "work" ? "Откликнуться →" : c.type === "loan" ? "Оформить заявку →" : "Оформить карту →";
+  const ctaText = "Оформить карту →";
   const specs = c.specs
     .map((s) => `<div class="ccard-spec"><span>${s.k}</span><b>${s.v}</b></div>`)
     .join("");
@@ -539,6 +493,7 @@ function render() {
       (c.bank + " " + c.name).toLowerCase().includes(currentQuery);
     return okType && okSearch;
   });
+
   grid.innerHTML = items.map(cardHTML).join("");
   noResults.hidden = items.length !== 0;
 }
