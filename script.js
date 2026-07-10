@@ -201,20 +201,6 @@ const CARDS = [
     link: "https://trk.ppdu.ru/click/VNoCPAwa?erid=2SDnjdFo9iJ"
   },
   {
-    bank: "ОТП Банк",
-    name: "КК 120 дней без %",
-    type: "credit",
-    rating: 4.5,
-    gradient: "linear-gradient(135deg,#00a05a,#00713f)",
-    specs: [
-      { k: "Без процентов", v: "до 120 дней" },
-      { k: "Кредитный лимит", v: "до 500 000 ₽" },
-      { k: "Обслуживание", v: "0 ₽" }
-    ],
-    tags: ["120 дней без %", "Бесплатное обслуживание"],
-    link: "https://trk.ppdu.ru/click/DF37bDI8?erid=2SDnjf24dte"
-  },
-  {
     bank: "Яндекс Пэй",
     name: "Кредитная «Супер Сплит»",
     type: "credit",
@@ -256,20 +242,6 @@ const CARDS = [
     ],
     tags: ["Кэшбэк на Ozon", "Без скрытых платежей"],
     link: "https://trk.ppdu.ru/click/sdKfuq9q?erid=2SDnjcGXYYi"
-  },
-  {
-    bank: "Ак Барс Банк",
-    name: "Кредитная «115 дней без %»",
-    type: "credit",
-    rating: 4.6,
-    gradient: "linear-gradient(135deg,#00794f,#00a651)",
-    specs: [
-      { k: "Условия", v: "уточняйте при оформлении" },
-      { k: "Заявка", v: "онлайн" },
-      { k: "Оформление", v: "бесплатно" }
-    ],
-    tags: ["Заявка онлайн", "Бесплатно"],
-    link: "https://trk.ppdu.ru/click/dbT9t1ub?erid=2SDnjbrXxdX"
   },
   {
     bank: "Кредит Европа Банк",
